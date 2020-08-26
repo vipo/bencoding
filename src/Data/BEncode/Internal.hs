@@ -27,10 +27,10 @@ import           Data.ByteString as B
 import           Data.ByteString.Internal as B (c2w, w2c)
 import qualified Data.ByteString.Lazy as Lazy
 import qualified Data.ByteString.Lazy.Builder as B
-import qualified Data.ByteString.Lazy.Builder.ASCII as B
-import Data.Foldable
+import           Data.ByteString.Lazy.Builder.ASCII()
+import Data.Foldable()
 import Data.List as L
-import Data.Monoid (Monoid (mappend, mempty))
+import Data.Monoid()
 import Text.PrettyPrint hiding ((<>))
 
 import Data.BEncode.Types

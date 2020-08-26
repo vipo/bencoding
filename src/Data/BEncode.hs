@@ -97,12 +97,12 @@ import Control.Applicative
 import Control.Monad
 import qualified Control.Monad.Fail as Fail
 import Control.Monad.State
-import Control.Monad.Error
+import Control.Monad.Except
 import Data.Int
 import Data.List as L
-import Data.Semigroup ((<>))
-import Data.Monoid (Monoid (mappend, mempty))
-import Data.Word          (Word8, Word16, Word32, Word64, Word)
+import Data.Semigroup()
+import Data.Monoid()
+import Data.Word          (Word8, Word16, Word32, Word64)
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as BC
 import qualified Data.ByteString.Lazy as Lazy

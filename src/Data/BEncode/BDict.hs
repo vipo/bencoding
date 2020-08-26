@@ -36,9 +36,9 @@ module Data.BEncode.BDict
 
 import Control.DeepSeq
 import Data.ByteString as BS
-import Data.Foldable
-import Data.Monoid (Monoid (mappend, mempty))
-import Data.Semigroup (Semigroup ((<>)))
+import Data.Foldable()
+import Data.Monoid()
+import Data.Semigroup()
 
 
 type BKey = ByteString

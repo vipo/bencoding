@@ -2,7 +2,6 @@
 {-# OPTIONS  -fno-warn-unused-binds #-}
 module Main (main) where
 
-import Control.Applicative
 import Data.ByteString as BS
 import Data.ByteString.Lazy as BL
 import Data.List as L
