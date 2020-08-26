@@ -95,6 +95,7 @@ module Data.BEncode
 
 import Control.Applicative
 import Control.Monad
+import qualified Control.Monad.Fail as Fail
 import Control.Monad.State
 import Control.Monad.Error
 import Data.Int
@@ -671,6 +672,7 @@ instance Monad Get where
   Get m >> Get n = Get (m >> n)
   {-# INLINE (>>) #-}
 
+instance Fail.MonadFail Get where
   fail msg = Get (lift (Left msg))
   {-# INLINE fail #-}
 
