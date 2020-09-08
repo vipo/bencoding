@@ -109,7 +109,7 @@ parser = valueP
     stringP :: Parser ByteString
     stringP = do
       n <- P.decimal :: Parser Int
-      P.char ':'
+      _ <- P.char ':'
       P.take n
     {-# INLINE stringP #-}
 
@@ -118,7 +118,7 @@ parser = valueP
       c <- P.peekChar
       case c of
         Just '-' -> do
-          P.anyChar
+          _ <- P.anyChar
           negate <$> P.decimal
         _        ->  P.decimal
     {-# INLINE integerP #-}
